@@ -1,0 +1,24 @@
+<script type ="text/javascript">
+
+const names = ["mohsin","bob","adam","john","bod"]; 
+    
+    function search()
+    {
+        for (var i=0; i<names.length; i++)
+        {
+            var ab = names[i];
+            
+            if (ab.startsWith(document.getElementById('name').value))
+            {
+                document.getElementById('users').innerHTML =  `<h2>${ab}</h2>`;
+                break;
+            }       
+        }
+    }
+    
+    </script>
+    
+    <BR> Name : <input type ="text" id ="name" onkeyup="search()"/> 
+    <div id="users"></div>
+    
+    
