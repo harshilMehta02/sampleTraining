@@ -1,6 +1,11 @@
 <head>
 <script>
 
+function myclear() 
+{ 
+    document.getElementById("screen").value = "" ;
+}
+
 function result() 
 { 
     var a = document.getElementById("screen").value ;
@@ -12,11 +17,6 @@ function myFunction(value)
 { 
     document.getElementById("screen").value+=value ;
 } 
-
-function clear() 
-{ 
-    document.getElementById("screen").value = "" ;
-}
 
 </script>
 </head>
@@ -33,9 +33,9 @@ function clear()
 <input type ="button" id = "8" value = "8" onclick="myFunction('8');">    
 <input type ="button" id = "9" value = "9" onclick="myFunction('9');">       <BR> <BR>            
 <input type ="button" id = "0" value = "0" onclick="myFunction('0');">       
-<input type ="button" id = "Equal" value = "=" onclick="result();">         <BR> <BR>            
+<input type ="button" id = "Equal" value = "=" onclick="result();">        
+<input type ="button" id = "C" value = "C" onclick="myclear();">             <BR> <BR>            
 <input type ="button" id = "ADD" value = "ADD" onclick="myFunction('+');"> 
 <input type ="button" id = "SUB" value = "SUB" onclick="myFunction('-');">    <BR> <BR> 
-<input type ="button" id = "Clear" value = "Clear" onclick="clear();"> 
 
 </body>
