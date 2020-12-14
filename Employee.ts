@@ -1,13 +1,8 @@
 interface I1{
-    id:number
-}
-
-interface I2 {
-    name:string
-}
-
-interface I3 {
-    email:string
+    id:number,
+    name:string,
+    email:string,
+    address:string
 }
 
 interface project{
@@ -15,8 +10,8 @@ interface project{
     projname:string
 }
 
-interface User extends I1,I2, I3, project{
-    projectDept:string
+interface User extends I1, project{
+    Department:string
 }
 
 interface Employee1{
@@ -30,9 +25,10 @@ var test:Employee1 = {
         id: 1,
         name: "Tech",
         email: "ee@gg.com",
+        address: "Mumbai",
         projId: 921,
         projname: "Typescript",
-        projectDept: "Techno-side",
+        Department: "Techs"
     },
      getUser : ():string=>{
              return "";
