@@ -1,0 +1,41 @@
+<head>
+<script>
+
+function result() 
+{ 
+    var a = document.getElementById("screen").value ;
+    var b = eval(a);
+    document.getElementById("screen").value = b ;
+} 
+
+function myFunction(value) 
+{ 
+    document.getElementById("screen").value+=value ;
+} 
+
+function clear() 
+{ 
+    document.getElementById("screen").value = "" ;
+}
+
+</script>
+</head>
+
+<body>
+<BR> <input type ="text" id ="screen" /> <BR> <BR>
+<input type ="button" id = "1" value = "1" onclick="myFunction('1');"> 
+<input type ="button" id = "2" value = "2" onclick="myFunction('2');">    
+<input type ="button" id = "3" value = "3" onclick="myFunction('3');">       <BR> <BR>
+<input type ="button" id = "4" value = "4" onclick="myFunction('4');"> 
+<input type ="button" id = "5" value = "5" onclick="myFunction('5');">    
+<input type ="button" id = "6" value = "6" onclick="myFunction('6');">       <BR> <BR>
+<input type ="button" id = "7" value = "7" onclick="myFunction('7');"> 
+<input type ="button" id = "8" value = "8" onclick="myFunction('8');">    
+<input type ="button" id = "9" value = "9" onclick="myFunction('9');">       <BR> <BR>            
+<input type ="button" id = "0" value = "0" onclick="myFunction('0');">       
+<input type ="button" id = "Equal" value = "=" onclick="result();">         <BR> <BR>            
+<input type ="button" id = "ADD" value = "ADD" onclick="myFunction('+');"> 
+<input type ="button" id = "SUB" value = "SUB" onclick="myFunction('-');">    <BR> <BR> 
+<input type ="button" id = "Clear" value = "Clear" onclick="clear();"> 
+
+</body>
